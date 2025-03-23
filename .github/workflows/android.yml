@@ -1,0 +1,26 @@
+姓名:Android CI
+
+在……之上:
+推:
+分支机构:[ "主要" ]
+pull_request:
+分支机构:[ "主要" ]
+
+工作:
+建立:
+
+run-on:ubuntu-最新
+
+步骤:
+-uses:操作/结帐@v4
+-姓名:设置JDK11
+uses:操作/设置-java@v4
+和……一起:
+java版:'11'
+分布:'temurin'
+缓存:Gradle
+
+-姓名:授予gradlew的执行权限
+跑:chmod+x gradlew
+-姓名:使用渐变生成
+跑:./gradlew构建
